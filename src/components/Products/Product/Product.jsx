@@ -32,7 +32,7 @@ const Product = ({ product }) => {
         </Typography>
       </CardContent>
       <CardActions disableSpacing className={classes.CardActions}>
-        <IconButton area-label="Add to cart">
+        <IconButton aria-label="Add to cart">
           <AddShoppingCart />
         </IconButton>
       </CardActions>

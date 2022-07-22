@@ -13,7 +13,7 @@ import { ShoppingCart } from "@material-ui/icons";
 import useStyles from "./styles";
 import logo from "../../assets/VaniShopLogo.png";
 
-const Navbar = () => {
+const Navbar = ({ totalItem }) => {
   const classes = useStyles();
 
   return (
@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className={classes.grow} />
           <div className={classes.button}>
             <IconButton aria-label="Show cart items" color="inherit">
-              <Badge badgeContent={2} color="secondary">
+              <Badge badgeContent={totalItem} color="secondary">
                 <ShoppingCart />
               </Badge>
             </IconButton>
